@@ -1,12 +1,14 @@
-<html xmlns:th="http://www.thymeleaf.org"
-th:with="lang=${#locale.language}" th:lang="${lang}">
+<html xmlns:th="http://www.thymeleaf.org">
 	<head>
-		<title>Start</title>
+		<title>Menu</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" media="all" th:href="@{/style/style.css}" />
 	</head>
 	<body>
-		<p><a href="/menu/" th:text="#{showmenu}">show menu</a></p>
+		<ul>
+			<li th:each="menuitem : ${menuitems}"><span th:text="${menuitem.name}" th:remove="tag">menuitem</span></li>
+		</ul>
+	
 		<div class="footer">
 			<p>Kamil Świtalski 2021</p>
 		</div>
