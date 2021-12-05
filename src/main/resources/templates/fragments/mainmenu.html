@@ -1,0 +1,40 @@
+<html xmlns:th="http://www.thymeleaf.org"
+th:with="lang=${#locale.language}" th:lang="${lang}">
+	<head>
+		<title>Start</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" media="all" th:href="@{/style/style.css}" />
+		<link rel="stylesheet" media="all" th:href="@{/style/mainmenu.css}" />
+		<link rel="stylesheet" th:href="@{/style/font-awesome.min.css}">
+	</head>
+	<body>
+		<nav th:fragment="mainmenu" class='animated flipInX'>
+			<ul>
+			    <li>
+			      <a href='/'>
+			        <div class='fa fa-home'></div>
+			      </a>
+			    </li>
+			    <li>
+			      <a href='/menu/' th:text="#{menu_our_menu}">
+			      </a>
+			    </li>
+			    <li>
+			      <a href='#' th:text="#{menu_on_sale}">
+			      </a>
+			    </li>
+			    <li>
+			      <a href='#' th:text="#{menu_about_us}">
+			      </a>
+			    </li>
+			    <li>
+			      <a href='#' th:text="#{menu_contact_us}">
+			        
+			      </a>
+			    </li>
+		  </ul>
+			
+			
+		</nav>
+	</body>
+</html>

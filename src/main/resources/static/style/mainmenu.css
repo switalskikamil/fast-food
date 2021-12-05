@@ -1,0 +1,41 @@
+
+nav {
+  position: absolute;
+  width: 450px;
+  top: 3%;
+  left: 50%;
+  margin: -23px 0 0 -240px;
+}
+nav ul {
+  background: #521a91;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+  text-align: center;
+}
+nav ul li:first-child a {
+  background: #6f59e8;
+  width: 49px;
+  padding: 15px 0;
+}
+nav ul li:last-child {
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  background: #521a91;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+nav ul li a:hover {
+  background: #6f59e8;
+}
+

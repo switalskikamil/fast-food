@@ -3,15 +3,17 @@
 		<title>Menu</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" media="all" th:href="@{/style/style.css}" />
+		<link rel="stylesheet" media="all" th:href="@{/style/mainmenu.css}" />
+		<link rel="stylesheet" th:href="@{/style/font-awesome.min.css}">
 	</head>
 	<body>
+	
+		<div th:insert="fragments/mainmenu :: mainmenu"></div>	
+	
 		<ul>
 			<li th:each="menuitem : ${menuitems}"><span th:text="${menuitem.name}" th:remove="tag">menuitem</span></li>
 		</ul>
 	
-		<div class="footer">
-			<p>Kamil Świtalski 2021</p>
-		</div>
-	
+		<div th:insert="fragments/footer :: footer"></div>
 	</body>
 </html>

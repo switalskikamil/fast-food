@@ -4,12 +4,12 @@ th:with="lang=${#locale.language}" th:lang="${lang}">
 		<title>Start</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" media="all" th:href="@{/style/style.css}" />
-		<link rel="stylesheet" media="all" th:href="@{/style/mainmenu.css}" />
-		<link rel="stylesheet" th:href="@{/style/font-awesome.min.css}">
 	</head>
 	<body>
-		<div th:insert="fragments/mainmenu :: mainmenu"></div>		
-
-		<div th:insert="fragments/footer :: footer"></div>
+		<footer th:fragment="footer">
+			<div class="footer">
+				<p>&copy; Kamil Świtalski 2021</p>
+			</div>
+		</footer>
 	</body>
 </html>
